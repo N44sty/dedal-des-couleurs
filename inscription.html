@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Inscription gratuite aux actualités de Dédal des Couleurs : formulaire de démonstration avec vérification de l’adresse e-mail.">
+  <meta name="theme-color" content="#263e35">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Dédal des Couleurs">
+  <meta property="og:title" content="Inscription | Dédal des Couleurs — Actualités">
+  <meta property="og:description" content="Inscription gratuite aux actualités de Dédal des Couleurs : formulaire de démonstration avec vérification de l’adresse e-mail.">
+  <title>Inscription | Dédal des Couleurs — Actualités</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="Dédal des Couleurs : retour à l’accueil">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span class="brand-name">DÉDAL <small>DES COULEURS</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <nav class="navigation" id="navigation" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="galerie.html">La galerie</a>
+      <a href="oeuvres.html">Les œuvres</a>
+      <a href="inscription.html" aria-current="page">Inscription</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="container signup-grid" aria-labelledby="inscription-titre">
+      <div class="signup-intro">
+        <p class="eyebrow">Gardez le contact</p>
+        <h1 id="inscription-titre">L’art dans<br>votre <em>boîte mail.</em></h1>
+        <p>Des nouvelles de la galerie, des découvertes et des informations sur les expositions : un moyen simple de rester proche des œuvres.</p>
+        <div class="signup-art"><img data-art-file="lucy-avec-fourrure-pascin.jpg" src="images/peintures/lucy-avec-fourrure-pascin.jpg" width="612" height="768" alt="Portrait de Lucy avec une fourrure par Jules Pascin, peinture dans des tons naturels." loading="lazy" referrerpolicy="no-referrer"></div>
+      </div>
+      <div class="form-card">
+        <p class="eyebrow">01 — Inscription gratuite</p>
+        <h2>Un peu d’art,<br>de temps en temps.</h2>
+        <p class="form-intro">Les trois champs sont obligatoires.</p>
+        <form id="inscription-form" method="post" novalidate>
+          <div class="field">
+            <label for="prenom">Prénom <span aria-hidden="true">*</span></label>
+            <input id="prenom" name="prenom" type="text" autocomplete="given-name" minlength="2" maxlength="60" required aria-describedby="erreur-prenom">
+            <p class="field-error" id="erreur-prenom" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="nom">Nom <span aria-hidden="true">*</span></label>
+            <input id="nom" name="nom" type="text" autocomplete="family-name" minlength="2" maxlength="60" required aria-describedby="erreur-nom">
+            <p class="field-error" id="erreur-nom" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Adresse e-mail <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="erreur-email">
+            <p class="field-error" id="erreur-email" aria-live="polite"></p>
+          </div>
+          <button class="button button-dark form-button" type="submit">Valider mon inscription <span aria-hidden="true">↗</span></button>
+          <p class="form-message" id="message-formulaire" role="status" aria-live="polite"></p>
+        </form>
+        <p class="form-disclaimer"><strong>Prototype pédagogique.</strong> Le formulaire vérifie les champs et le format de l’e-mail, mais ne transmet et n’enregistre aucune donnée.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">DÉDAL DES COULEURS</a>
+        <p>Regarder l’art autrement.</p>
+        <p class="footer-note">Site conçu pour un exercice universitaire : la galerie présentée est fictive.</p>
+      </div>
+      <div>
+        <h2>La galerie</h2>
+        <address>10 rue de la République<br>75000 Paris<br>
+          <a href="tel:+33163458556">01 63 45 85 56</a><br>
+          <a href="mailto:dedal@gmail.com">dedal@gmail.com</a>
+        </address>
+      </div>
+      <div>
+        <h2>Explorer</h2>
+        <ul>
+          <li><a href="galerie.html">Notre histoire</a></li>
+          <li><a href="oeuvres.html">Les œuvres</a></li>
+          <li><a href="inscription.html">Recevoir nos actualités</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Dédal des Couleurs · Projet pédagogique</span>
+      <span>Peintures de référence : Soutine, Modigliani et Pascin · Sources : Wikimedia Commons.</span>
+    </div>
+  </footer>
+</body>
+</html>
