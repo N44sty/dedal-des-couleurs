@@ -2,12 +2,16 @@
 
 Site vitrine responsive d'une galerie d'art fictive, consacré à la présentation de la galerie, à son histoire et à une sélection commentée de peintures de l'École de Paris.
 
+## Site en ligne
+
+https://n44sty.github.io/dedal-des-couleurs/
+
 ## Pages
 
 - `index.html` — Accueil
 - `galerie.html` — La galerie et son histoire
 - `oeuvres.html` — Sélection de six peintures et notices
-- `inscription.html` — Formulaire de contact avec validation côté navigateur, sans collecte de données
+- `inscription.html` — Formulaire d'inscription avec validation côté navigateur, sans enregistrement de données
 
 ## Structure
 
